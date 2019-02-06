@@ -13,7 +13,7 @@ const header1 = document.querySelector('.intro h2');
 header1.addEventListener('click', function(event) {
  event.target.style.color = 'blue'
 })
-    
+
 const header2 = document.querySelector('.text-content h2');
 header2.addEventListener('wheel', function(event) {
  event.target.style.color = 'yellow'
@@ -52,7 +52,7 @@ image3.addEventListener('mousemove', function(event) {
 
 
 
-//paragraphhs
+//paragraphs
 
 const paragraph1 = document.querySelector('.intro p');
 paragraph1.addEventListener('mousemove', function(event) {
@@ -75,9 +75,56 @@ paragraph4.addEventListener('mousemove', function(event) {
   event.target.style.color = 'seaGreen'
 })
 
-// const myButtons = document.querySelectorAll('.destination .btn');
-// myButtons.addEventListener('animationstart', function(event) {
-  
-// AnimationEvent = new AnimationEvent('animationstart', { animationName: bounce,
-// elaspedTime: 0.0,
-// pseudoElement:''}) button not working yet 
+const footer = document.querySelector('.footer p');
+footer.addEventListener('mousemove', function(event) {
+  event.target.style.color = 'orange'
+
+//buttons//
+
+
+const firstBtn = document.getElementById('button1');
+
+firstBtn.addEventListener('mousemove', function(event) {
+    event.target.style.backgroundColor = 'black'
+    event.target.style.color = 'red'
+    firstBtn.textContent = 'Declined';
+});
+
+firstBtn.addEventListener('mouseover', function(event) {
+    event.target.style.backgroundColor = 'green'
+    event.target.style.color = 'white'
+    firstBtn.textContent = 'Do Not Spend It!';
+    }); 
+
+
+
+const Buttons = document.getElementById('button2');
+
+Buttons.addEventListener('click', function(event) {
+    event.target.style.backgroundColor = 'black'
+    event.target.style.color = 'red'
+    Buttons.textContent = 'Broke';
+});
+
+Buttons.addEventListener('dblclick', function(event) {
+    event.target.style.backgroundColor = 'green'
+    event.target.style.color = 'white'
+    Buttons.textContent = 'Spend Money';
+    }); 
+
+
+
+const myButton = document.getElementById('button3');
+
+myButton.addEventListener('mousemove', function(event) {
+    event.target.style.backgroundColor = 'black'
+    event.target.style.color = 'red'
+    myButton.textContent = 'Broke'; 
+});
+
+myButton.addEventListener('mouseout', function(event) {
+    event.target.style.backgroundColor = 'green'
+    event.target.style.color = 'white'
+    myButton.textContent = 'Spend Money';
+    }); 
+});  
